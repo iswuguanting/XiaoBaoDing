@@ -1,0 +1,45 @@
+<view>
+  <view class="putbox">
+    <!-- 菜品图片 -->
+    <view class="putbox-nav">
+      <view class="box-img">
+        <view><text>菜品照片：</text></view>
+        <view class="imgContant">
+          <image src="{{imgs}}" bindtap="bindUpload" />
+        </view>
+      </view>
+
+      <!-- 菜品名称 -->
+      <view class="food-name">
+        <view><text>菜品名称：</text></view>
+        <input type="text" placeholder="请输入菜品名称(四个字最佳)" class="ipt1" value="{{foodname}}" bindinput="foodinputone" />
+      </view>
+
+      <!-- 菜品类型 -->
+      <view class="food-name">
+        <view><text>菜品类型：</text></view>
+        <view class="selet">
+          <view bindtap="caileixin"><text>{{selname.name}}</text></view>
+          <view class="selet-opt" wx:if="{{selShow == true}}">
+            {{sel}}
+            <view class="foo-ter" wx:for="{{selData}}" wx:key="froolId" bindtap="tofroo" data-name="{{item}}">{{item.name}}</view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 给菜品添加描述 -->
+      <textarea class="textare" name="" id="" cols="30" rows="10" bindinput="textare" placeholder="请描述一下该商品（最大一百字左右）">
+
+      </textarea>
+
+      <!-- 价格 -->
+      <view class="food-name">
+        <view><text>菜品价格：</text></view>
+        <input type="text" placeholder="请输入菜品价格（填写数字）" class="ipt1" bindinput="CommoditypPrices" />
+      </view>
+
+      <!-- 添加 -->
+      <view class="shanpin" bindtap="tianjai">添加</view>
+    </view>
+  </view>
+</view>

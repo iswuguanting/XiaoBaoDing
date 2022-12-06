@@ -1,0 +1,135 @@
+<view class="main">
+    <view class="categroy-left">
+        <view wx:for="{{category}}" wx:key="index" data-id="{{item.id}}" data-index="{{index}}" bindtap="switchTab" class="cate-list {{curIndex === index?'on':''}}">{{item.name}}</view>
+    </view>
+
+    <scroll-view class="categroy-right" scroll-y="{{isScroll}}" scroll-into-view="{{toView}}" scroll-with-animation="true" >
+        <!-- <block wx:for="{{detail}}" wx:for-index wx:key="idx">
+            <view id="{{item.id}}" class="cate-box">
+                <view class="cate-banner">
+                    <image src="{{item.banner}}"></image>
+                </view>
+                <view class="cate-title">
+                    <text>{{item.cate}}</text>
+                </view>
+                <view class="product">
+                    <view class="product-list" wx:for="{{item.detail}}" wx:key="index" wx:for-item="val">
+                        <navigator url="../list/list">
+                            <image src="{{val.thumb}}"></image>
+                            <view class="classname"><text>{{val.name}}</text></view>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </block> -->
+         <!-- 果味 -->
+        <block>
+            <view id="guowei" class="cate-box">
+                <view class="cate-banner">
+                    <image src="cloud://tianxuan-3gaixj5u932de649.7469-tianxuan-3gaixj5u932de649-1314595407/caidan/biaoti - 副本.jpg"></image>
+                </view>
+                <view class="cate-bosing">
+                    <view class="bosingone">
+                        <view class="continiu" wx:for="{{shuiguo}}" wx:key="_id" bindtap="gotushu" data-it="{{item}}">
+                            <view class="continiu-top">
+                                <image src="{{item.img}}" lazy-load></image>
+                            </view>
+                            <view class="continiu-name">{{item.foodname}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <!-- 蔬菜 -->
+        <block>
+            <view id="shucai" class="cate-box">
+                <view class="cate-banner">
+                    <image src="cloud://tianxuan-3gaixj5u932de649.7469-tianxuan-3gaixj5u932de649-1314595407/caidan/未标题 - 副本.jpg"></image>
+                </view>
+                <view class="cate-bosing">
+                    <view class="bosingone">
+                      <view class="continiu" wx:for="{{shucai}}" wx:key="_id" bindtap="gotushu" data-it="{{item}}">
+                            <view class="continiu-top">
+                                <image src="{{item.img}}" lazy-load></image>
+                            </view>
+                            <view class="continiu-name">{{item.foodname}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <!-- 小炒 -->
+        <block>
+            <view id="chaohuo" class="cate-box">
+                <view class="cate-banner">
+                    <image src="cloud://tianxuan-3gaixj5u932de649.7469-tianxuan-3gaixj5u932de649-1314595407/caidan/未标题-1 - 副本 (2).jpg"></image>
+                </view>
+                <view class="cate-bosing">
+                    <view class="bosingone">
+                      <view class="continiu" wx:for="{{xiaochao}}" wx:key="_id" bindtap="gotushu" data-it="{{item}}">
+                            <view class="continiu-top">
+                                <image src="{{item.img}}" lazy-load></image>
+                            </view>
+                            <view class="continiu-name">{{item.foodname}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <!-- 点心 -->
+        <block>
+            <view id="dianxin" class="cate-box">
+                <view class="cate-banner">
+                    <image src="cloud://tianxuan-3gaixj5u932de649.7469-tianxuan-3gaixj5u932de649-1314595407/caidan/biao.jpg"></image>
+                </view>
+                <view class="cate-bosing">
+                    <view class="bosingone">
+                      <view class="continiu" wx:for="{{dianxin}}" wx:key="_id" bindtap="gotushu" data-it="{{item}}">
+                            <view class="continiu-top">
+                                <image src="{{item.img}}" lazy-load></image>
+                            </view>
+                            <view class="continiu-name">{{item.foodname}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <!-- 香茶 -->
+        <block>
+            <view id="cucha" class="cate-box">
+                <view class="cate-banner">
+                    <image src="cloud://tianxuan-3gaixj5u932de649.7469-tianxuan-3gaixj5u932de649-1314595407/caidan/未标题-1.jpg"></image>
+                </view>
+                <view class="cate-bosing">
+                    <view class="bosingone">
+                      <view class="continiu" wx:for="{{xiangcha}}" wx:key="_id" bindtap="gotushu" data-it="{{item}}">
+                            <view class="continiu-top">
+                                <image src="{{item.img}}" lazy-load></image>
+                            </view>
+                            <view class="continiu-name">{{item.foodname}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <!-- 饭 -->
+        <block>
+            <view id="danfan" class="cate-box">
+                <view class="cate-banner">
+                    <image src="cloud://tianxuan-3gaixj5u932de649.7469-tianxuan-3gaixj5u932de649-1314595407/caidan/未标题-1 - 副本.jpg"></image>
+                </view>
+                <view class="cate-bosing">
+                    <view class="bosingone">
+                      <view class="continiu" wx:for="{{danfang}}" wx:key="_id" bindtap="gotushu" data-it="{{item}}">
+                            <view class="continiu-top">
+                                <image src="{{item.img}}" lazy-load></image>
+                            </view>
+                            <view class="continiu-name">{{item.foodname}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </scroll-view>
+
+</view>

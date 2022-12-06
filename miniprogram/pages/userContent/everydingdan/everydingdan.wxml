@@ -1,0 +1,51 @@
+<view class="bosin">
+  <view class="cete-top">
+    <view class="cete-main">
+      <!-- active 是高亮 -->
+      <view class="this-one {{active == item.title?'active':''}}" wx:for="{{datas}}" wx:key="index" bindtap="gaoliang" data-title="{{item.title}}">
+        {{item.name}}
+      </view>
+    </view>
+  </view>
+  <scroll-view class="categroy-data" scroll-x="{{isScoll}}" scroll-into-view="{{active}}" scroll-with-animation="true" class="disbloc">
+  <!-- 外部遍历 -->
+    <view class="block" wx:for="{{datas}}" wx:key="index" wx:for-item="res"> 
+      <view id="{{res.title}}" class="daifukuan">
+        <!-- 数据内容 -->
+        <view class="daifukuan-firs" wx:for="{{res.content}}" wx:key="_id" >
+          <view class="daifukuan-main">
+            <view class="context">
+              <view class="co-imgs">
+                <image src="{{item.shop.img}}"></image>
+              </view>
+              <view class="conte-name">
+                <view class="bos-name">
+                  {{item.shop.foodname}}
+                </view>
+                <view class="textar">
+                  {{item.shop.textareName}}
+                </view>
+                
+              </view>
+              <view class="text-ri">
+                 <view>共</view>
+                 <view>{{item.number1}}</view>
+                 <view>件</view>
+                </view>
+            </view>
+            <view class="timeendmon">
+                <view>下单时间 : {{item.timer[1].setti}} {{item.timer[1].shi}}:{{item.timer[1].fen}} </view>
+                <view class="mon-ever"><text wx:if="{{res.num == 0}}">需</text><text  wx:if="{{res.num == 1}}">已</text>支付<view class="mon-we">￥{{item.everymoney}}</view></view>
+            </view>
+            <view class="zhif">
+              <view class="zhif-one" wx:if="{{res.num == 0}}" bindtap="fukuan" data-id="{{item._id}}">立即支付</view>
+              <view class="zhif-two" wx:if="{{res.num == 1}}" bindtap="zailaiyd" data-it="{{res}}">再来一单</view>
+
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </scroll-view>
+</view>

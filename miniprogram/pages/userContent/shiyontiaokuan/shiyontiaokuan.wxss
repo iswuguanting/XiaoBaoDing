@@ -1,0 +1,5 @@
+/* pages/userContent/shiyontiaokuan/shiyontiaokuan.wxss */
+.view{
+    font-size: 100rpx;
+    font-weight: 600;
+}

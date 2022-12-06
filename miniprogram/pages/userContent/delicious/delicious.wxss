@@ -1,0 +1,106 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ddd;
+}
+
+.cete-top {
+    width: 100vw;
+    /* height: 50rpx; */
+    background-color: aqua;
+    overflow: hidden;
+}
+
+.cete-main {
+    width: 100%;
+    /* height: 50rpx; */
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20rpx 0;
+    background-color: white;
+    display: flex;
+}
+
+.this-one {
+    flex: none;
+    margin: 0 0 0 20rpx;
+    padding: 10rpx 20rpx;
+    border-radius: 999rpx;
+    /* width: 100rpx; */
+    height: 100%;
+    /* background-color: red; */
+}
+
+.active {
+    color: white;
+    background-color: red;
+}
+
+.cete-main::-webkit-scrollbar {
+    display: none;
+}
+
+.categroy-data {
+    width: 100%;
+    height: 91vh;
+    background-color: #ddd;
+    display: enable-flex;
+    white-space: nowrap;
+}
+
+.bloc{
+    display: inline-block;
+}
+
+.scol-one {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+    /* overflow: hidden; */
+    /* float: left; */
+}
+
+.scol-main {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 20rpx;
+    box-sizing: border-box;
+
+}
+
+.main-firs {
+    width: 50%;
+    height: 340rpx;
+    /* background-color: red; */
+    float: left;
+}
+
+.firs-img {
+    width: 260rpx;
+    height: 260rpx;
+    /* background-color: salmon; */
+    margin: 0 auto;
+}
+.firs-img image{
+    width: 100%;
+    height: 100%;
+    border-radius: 30rpx;
+}
+
+.scol-main::-webkit-scrollbar {
+    display: none;
+}
+
+.firs-name {
+    text-align: center;
+    width: 250rpx;
+    margin: 0 auto;
+    height: 80rpx;
+    /* background-color: aqua; */
+    line-height: 80rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

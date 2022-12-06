@@ -1,0 +1,154 @@
+/* miniprogram/pages/user/user.wxss */
+page {
+    background-color: #e3e3e3;
+}
+
+.category {
+    width: 100%;
+    padding: 36rpx 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.category view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10rpx 24rpx;
+}
+
+.category image {
+    height: 60rpx;
+    width: 60rpx;
+}
+
+.category text {
+    font-size: 28rpx;
+    color: #666;
+}
+
+.denl{
+    width: 350rpx;
+    height: 100rpx;
+    background-color: #ff6262;
+    font-size: 38rpx;
+    font-weight: 600;
+    color: white;
+    line-height: 100rpx;
+    border-radius: 20rpx;
+    margin: 50rpx 0;
+}
+
+/* 此作品是由吴官庭制作
+QQ:2698328738
+*/
+.user {
+    font-size: 28rpx;
+}
+
+.logout {
+    text-align: center;
+    padding: 160rpx 200rpx;
+}
+
+.logout button {
+    margin-top: 100rpx;
+    line-height: 80rpx;
+    font: 28rpx;
+    background: #ff6262;
+    color: #fff;
+}
+
+.login {
+    margin: 0;
+}
+
+.login .name .name-ta {
+    height: 140rpx;
+    width: 140rpx;
+    flex: 1;
+    border-radius:10rpx;
+}
+.login .name .name-ta image{
+    width: 140rpx;
+    height:  140rpx;
+}
+
+
+.login .name {
+    background: linear-gradient(#f79642, #f5798d);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30rpx;
+}
+
+.login .name text {
+    padding-top: 20rpx;
+    color: #fff;
+}
+
+.login .collection {
+    padding: 50rpx 30rpx;
+    background: #fff;
+}
+
+.login .collection .my {
+    font-weight: bold;
+    border-left: 3px solid #ff6262;
+    padding-left: 14rpx;
+}
+
+.wh {
+    height: 200rpx;
+    margin: 30rpx 30rpx 30rpx 30rpx;
+    background-image: linear-gradient(to right, rgb(83, 211, 200) , rgb(148, 230, 166));
+    border-radius: 30rpx;
+}
+
+.framework {
+    /* height: 550rpx; */
+    padding: 30rpx 0;
+    margin: 0 30rpx;
+    background: linear-gradient(#faea92, #e79aa7);
+    border-radius: 30rpx;
+}
+
+.framework view {
+    height: 60rpx;
+    padding: 20rpx;
+    margin: 0 30rpx;
+    line-height: 60rpx;
+    border-bottom: 1px solid #912929;
+    
+}
+
+.tiaofi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.framework view text {
+    margin: 30rpx;
+    font-size: 50rpx;
+    color: slategray;
+}
+.framework view image{
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.menu > view {
+    padding: 20rpx;
+    line-height: 60rpx;
+    border-bottom: 1px solid #912929;
+    height: 60rpx;
+  }
+  
+  .menu > view:last-child {
+    border: none;
+  }

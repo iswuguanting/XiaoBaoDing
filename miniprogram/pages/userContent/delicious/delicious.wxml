@@ -1,0 +1,28 @@
+<view class="main">
+    <view class="cete-top">
+        <view class="cete-main">
+            <!-- active 是高亮 -->
+            <view class="this-one {{active == item.title?'active':''}}" wx:for="{{eatfro}}" wx:key="froolId" data-ac="{{item.title}}" bindtap="ceteactive">
+                {{item.timename}}
+            </view>
+        </view>
+    </view>
+    <scroll-view class="categroy-data" scroll-x="{{isScoll}}" scroll-into-view="{{active}}" scroll-with-animation="true">
+        <view  class="bloc" wx:for="{{scoData}}" wx:key="foo">
+            <view id="{{item.foo}}" class="scol-one">
+                <view class="scol-main">
+                <!-- 内容 -->
+                    <view class="main-firs" wx:for="{{item.froodArr}}" wx:key="_id" bindtap="gotoxian" data-ids="{{item._id}}">
+                        <view class="firs-img">
+                            <image src="{{item.img}}"></image>
+                        </view>
+                        <view class="firs-name">
+                            {{item.foodname}}
+                        </view>
+                    </view>
+                   
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

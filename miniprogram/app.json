@@ -1,0 +1,53 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/home/home",
+        "pages/menu/menu",
+        "pages/user/user",
+        "pages/userContent/merchantsMenu/merchantsMenu",
+        "pages/userContent/DataDetails/DataDetails",
+        "pages/userContent/startshopping/startshopping",
+        "pages/userContent/delicious/delicious",
+        "pages/userContent/everydingdan/everydingdan",
+        "pages/userContent/shiyontiaokuan/shiyontiaokuan"
+
+        
+
+    ],
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "云开发 QuickStart",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#6e6d6b",
+        "selectedColor": "#FF6262",
+        "borderStyle": "white",
+        "backgroundColor": "#e3e3e3",
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "主页",
+            "iconPath": "./images/tab/index.png",
+            "selectedIconPath": "./images/tab/index-active.png"
+        }, {
+            "pagePath": "pages/menu/menu",
+            "text": "菜单",
+            "iconPath": "./images/tab/menu.png",
+            "selectedIconPath": "./images/tab/menu-active.png"
+        }, {
+            "pagePath": "pages/home/home",
+            "text": "购物车",
+            "iconPath": "./images/tab/gowwuche-two.png",
+            "selectedIconPath": "./images/tab/gowuche.png"
+        }, {
+            "pagePath": "pages/user/user",
+            "text": "我的",
+            "iconPath": "./images/tab/user.png",
+            "selectedIconPath": "./images/tab/user-active.png"
+        }]
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}

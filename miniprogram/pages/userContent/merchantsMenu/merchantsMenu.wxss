@@ -1,0 +1,104 @@
+page {
+    background: #EFF4FF;
+}
+
+.imgBox {
+    font-size: 28rpx;
+    margin: 20rpx;
+    background: white;
+    padding: 30rpx;
+    border-radius: 30rpx;
+    display: flex;
+    align-items: center;
+}
+
+.imgContant {
+  width: 300rpx;
+  height: 300rpx;
+    margin-left: 40rpx;
+    border: 1rpx solid rgb(235, 235, 235);
+}
+.imgContant image{
+  width: 100%;
+  height: 100%;
+}
+
+/* 重新搞的 */
+
+.putbox{
+  box-sizing: border-box;
+  width: 100vw;
+  /* height: 100vh; */
+  /* background-color: white; */
+  padding: 20rpx;
+}
+
+.putbox-nav{
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 20rpx;
+  padding: 20rpx;
+}
+
+.box-img{
+  display: flex;
+  align-items: center;
+}
+
+.food-name{
+  margin: 40rpx 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.ipt1{
+  width: 405rpx;
+}
+
+.selet{
+  width: 200rpx;
+  /* height: 30rpx; */
+  /* background-color: aqua; */
+  border: 1rpx solid #ddd;
+  font-size: 24rpx;
+  position: relative;
+  z-index: 999;
+}
+.selet view{
+  padding: 20rpx;
+}
+
+.selet-opt{
+  position: absolute;
+  width: 160rpx;
+  /* height: 200rpx; */
+  background-color: #ccc;
+  z-index: 999;
+}
+
+.foo-ter{
+  width: 100rpx;
+  /* height: 100%; */
+  margin: 0 auto;
+  background-color: rgb(252, 252, 252);
+}
+
+.textare{
+  border: 1rpx solid solid;
+}
+
+.shanpin{
+  width: 200rpx;
+  height: 50rpx;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50rpx;
+  border-radius: 30rpx;
+  padding: 30rpx;
+  background-color: aqua;
+}
+

@@ -1,0 +1,255 @@
+/* pages/userContent/startshopping/startshopping.wxss */
+.conten{
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.conten-top{
+  width: 100%;
+  border-radius: 30rpx;
+  background-color: white;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.then-one{
+  width: 100%;
+  height: 100rpx;
+  margin: 10rpx 0;
+  /* background-color: violet; */
+  display: flex;
+}
+
+.then-img{
+  width: 100rpx;
+  height: 100rpx;
+  /* background-color: red; */
+}
+.then-img image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+
+.then-name{
+  width: 350rpx;
+  height: 100%;
+  margin-left: 20rpx;
+  /* background-color: seagreen; */
+  display: grid;
+
+}
+.then-name view:nth-child(1){
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.then-name view:nth-child(2){
+  font-size: 18rpx;
+  color: #adadad;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.then-name view:nth-child(3){
+  font-size: 18rpx;
+  color: #adadad;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.then-mon{
+  width: 150rpx;
+  height: 100%;
+  margin-left: 30rpx;
+  /* background-color: sienna; */
+}
+
+.themoney{
+  width: 100%;
+  height: 40%;
+  /* background-color: cadetblue; */
+  font-size: 24rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 600;
+}
+
+.thenum{
+  width: 100%;
+  height: 60%;
+  /* background-color: rgb(4, 247, 255); */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.thenum view:nth-child(1){
+
+  display: flex;
+  line-height: 30rpx;
+  align-items: center;
+  padding: 10rpx;
+  background-color: #fff3eb;
+  border-radius: 50%;
+  color: red;
+  font-size: 50rpx;
+}
+.acti{
+  color: black;
+}
+.active{
+  color: #ddd;
+}
+.thenum view:nth-child(3){
+ 
+  text-align: center;
+  line-height: 30rpx;
+  padding:  10rpx;
+  font-size: 40rpx;
+  border-radius: 50%;
+  color: red;
+  background-color: #fff3eb;
+}
+
+.yhq{
+  width: 100%;
+  height: 60rpx;
+  background-color: #fff3eb;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  display: flex;
+  box-sizing: border-box;
+}
+.yhq image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.yhq view{
+  font-size: 24rpx;
+  line-height: 45rpx;
+  margin-left: 10rpx;
+  color: #e1754e;
+}
+.diyonq{
+  width: 100%;
+  height: 80rpx;
+  /* background-color: sienna; */
+  display: flex;
+  justify-content: space-between;
+  border-bottom:1px solid #ddd ;
+}
+.diyonq-le{
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+.diyonq-le image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.diyonq-le view{
+  margin-left: 20rpx;
+}
+.diyonq-ri{
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+  color: #aaa;
+}
+
+.xiaoji{
+  width: 100%;
+  height: 80rpx;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 26rpx;
+}
+.xiaoji view{
+  margin-left: 20rpx;
+}
+.xiaoji view:nth-child(2){
+  color: red;
+  font-weight: 600;
+}
+.houxiang{
+  width: 100%;
+  height: 90rpx;
+  background-color: white;
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.houxiang view:nth-child(2){
+  display: flex;
+}
+.jifen{
+  color: #e76534;
+  margin: 0 0 0 10rpx;
+}
+
+.tijaioss{
+  width: 100vw;
+  height: 100rpx;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  padding:10rpx 20rpx;
+}
+
+.tijaioss-main{
+  width: 100%;
+  height: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-one{
+  display: flex;
+}
+
+.main-mony{
+  display: flex;
+  color: red;
+}
+
+.main-le{
+  width: 250rpx;
+  height: 100%;
+  /* background-color: silver; */
+  box-sizing: border-box;
+  padding-top: 25rpx;
+  font-size: 20rpx;
+
+}
+
+.main-le view{
+  /* font-size: 20rpx; */
+}
+.mony{
+  margin-top: -20rpx;
+  font-size: 40rpx;
+}
+
+.tijaiodd{
+  padding: 20rpx 80rpx;
+  background: linear-gradient(20deg, #fd7203,#fe520e);
+  color: white;
+  font-weight: 600;
+  font-size: 30rpx;
+  border-radius: 999rpx;
+}

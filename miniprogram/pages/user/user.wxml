@@ -1,0 +1,52 @@
+<!--miniprogram/pages/user/user.wxml-->
+<view class='user'>
+    <!-- 未登录时 -->
+    <view class='logout' wx:if='{{!logged}}'>
+        <text>请登录后查看您的订单</text>
+        <view class="denl" bindtap="onGetUserInfo">
+            登录
+        </view>
+    </view>
+    <view class='login' wx:if='{{logged}}'>
+        <!-- 用户头像和名字 -->
+        <view class='name'>
+            <view class="name-ta">
+                <image src="{{xinxi.avatarUrl}}" style="border-radius: 50rpx;"></image>
+            </view>
+           
+            <view style="text-align: center;margin-top: 10rpx;color: white;">{{xinxi.nickName}}</view>
+        </view>
+
+        <view class="wh">
+            <view class='category'>
+                <view wx:for="{{category}}" wx:key="goList" bindtap="gotudd" data-title="{{item.title}}" data-num="{{item.num}}">
+                    <image src='{{item.img}}' mode='aspectFit'></image>
+                    <text>{{item.name}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="framework">
+            <view bindtap="tiaozhuan" class="tiaofi">
+                <text>店内用餐</text>
+                <image src="/images/more.png" ></image>
+            </view>
+            <view class="tiaofi">
+                <text>评价</text>
+                <image src="/images/more.png" ></image>
+            </view>
+            <view class="tiaofi">
+                <text bindtap="phone">联系方式</text>
+                <image src="/images/more.png" ></image>
+            </view>
+            <!-- <view class="tiaofi">
+                <text bindtap="tiaoCaiPin">添加菜品</text>
+                <image src="/images/more.png" ></image>
+            </view> -->
+            <view class="tiaofi">
+                <text bindtap="shiyontiaokuan">使用条款</text>
+                <image src="/images/more.png" ></image>
+            </view>
+        </view>
+    </view>
+
+</view>

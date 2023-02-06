@@ -1,0 +1,114 @@
+/**index.wxss**/
+
+page {
+    background-color: #f6f6f6;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20rpx 30rpx;
+   
+}
+
+.container-box {
+    width: 100%;
+    height: 100%;
+    /* background-color: saddlebrown; */
+    /* overflow: hidden; */
+}
+
+.box-swiper {
+    width: 100%;
+    height: 300rpx;
+    border-radius: 20rpx;
+    overflow: hidden;
+    background-color: aqua;
+}
+
+.swiper-one image {
+    width: 100%;
+}
+
+.zaocan {
+    display: flex;
+    width: 100%;
+    margin: 60rpx 0;
+}
+
+.frood {
+    width: 20%;
+    /* height: 200rpx; */
+    /* background-color: red; */
+    text-align: center;
+}
+
+.frood image {
+    width: 80%;
+    height: 100rpx;
+    margin: 0 auto;
+}
+
+.frood view {
+    color: #8f8f8f;
+    width: 140rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.frood-like {
+    width: 100%;
+    height: 100rpx;
+    /* background-color: darksalmon; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like-one {
+    font-size: 50rpx;
+    font-weight: 600;
+}
+
+.guess-you-like {
+    width: 100%;
+    /* height: 840rpx; */
+    /* background-color: aqua; */
+    overflow: hidden;
+    margin: 30rpx 0;
+}
+
+.the-like {
+    float: left;
+    width: 344rpx;
+    height: 340rpx;
+    /* background-color: saddlebrown; */
+}
+
+.like-img {
+    width: 260rpx;
+    height: 260rpx;
+    /* background-color: aqua; */
+    margin: 0 auto;
+}
+
+.like-img image{
+    width: 100%;
+    height: 100%;
+    border-radius: 30rpx;
+}
+
+.like-names{
+    width: 200rpx;
+    height: 80rpx;
+    /* background-color: salmon; */
+    margin: 0 auto;
+    text-align: center;
+    line-height: 80rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

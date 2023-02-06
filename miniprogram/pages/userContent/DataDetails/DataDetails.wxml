@@ -1,0 +1,70 @@
+<!--pages/userContent/DataDetails/DataDetails.wxml-->
+<view>
+  <view class="databox">
+    <view class="main">
+      <view class="main-top-img">
+        <image src="{{datas.img}}"></image>
+      </view>
+
+      <!-- 描述 -->
+      <view class="mian-conten">
+        <view class="conten-mia">
+          <view class="cainane">{{datas.foodname}}</view>
+          <view class="caijia">￥{{datas.foodmony}}</view>
+        </view>
+
+        <view class="mian-contento">
+          <view class="mia-to">
+            {{datas.textareName}}
+          </view>
+        </view>
+
+      </view>
+      <!-- 推荐 -->
+      <view class="tuij">
+        <view class="tuijian">推荐</view>
+        <!-- 遍历推荐的内容 -->
+        <view class="the-like" wx:for="{{tuijian}}" wx:key="_id" bindtap="gotushu" data-it="{{item}}">
+                <view class="like-img">
+                    <image src="{{item.img}}">
+                    </image>
+                </view>
+                <view class="like-names">
+                   {{item.foodname}}
+                </view>
+            </view>
+      </view>
+
+      <!-- 顶底边空格 -->
+      <view class="booa">
+
+      </view>
+
+    </view>
+
+  </view>
+
+  <!-- 购买商品 -->
+  <view class="shoping">
+    <view class="gwc">
+      <view class="gwc-img" bindtap="gogouwuch">
+        <image src="../../../images/tab/gowwuche-two.png" alt="" />
+        <!-- 这里到时候添加购物车的数量 -->
+        <view class="gwc-num" wx:if="{{gwcnum != 0}}">
+          {{gwcnum}}
+        </view>
+      </view>
+      <view class="cwc-nam" >购物车</view>
+    </view>
+    <view class="goumai">
+      <view class="liji">
+        <view class="liji-one" bindtap="jiarugwc">
+          加入购物车
+        </view>
+        <view class="liji-two" bindtap="qiangou">
+          立即购买
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

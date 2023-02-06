@@ -1,0 +1,56 @@
+<!--pages/home/home.wxml-->
+<view class="bosings">
+    <view class="main">
+        <view class="conten">
+            <view class="content-one" wx:for="{{datas}}" wx:key="index">
+                <!-- 选择的图片 -->
+                <view class="cli" data-ids="{{item.data._id}}"  bindtap="check">
+                    <image src="cloud://tianxuan-3gaixj5u932de649.7469-tianxuan-3gaixj5u932de649-1314595407/swiper-zhuye/weixuanzhon.png" alt="" class="img1" />
+                    <image src="cloud://tianxuan-3gaixj5u932de649.7469-tianxuan-3gaixj5u932de649-1314595407/swiper-zhuye/xuanzhon.png" alt="" class="img1" wx:for="{{active}}" wx:for-item="res" wx:key="index" wx:if="{{res == item.data._id}}" />
+                </view>
+                <!-- 商品图片 -->
+                <view class="content-two">
+                    <image src="{{item.img}}" alt="" />
+                </view>
+                <!-- 名称那些 -->
+                <view class="content-three">
+                    <view class="content-frou">{{item.name}}</view>
+                    <view class="content-frou">下单时间：{{item.times}} {{item.shiout}}:{{item.fenout}}</view>
+                    <view class="content-frou">
+                        <view class="fro-to">
+                            单价：￥
+                            <view class="mon">{{item.mony}}</view>
+                        </view>
+                        <view class="fro-tw">
+                            <view class="jian" bindtap="jianshao" data-idd="{{ item.data._id }}" data-num="{{ item.data.number1 }}" data-mon="{{item.data.shop.foodmony}}">-</view>
+                            <view class="fro-foo">
+                                <view>
+                                    x{{item.number1}}</view>
+                            </view>
+                            <view class="jia" bindtap="jiazhi" data-idd="{{ item.data._id }}" data-mon="{{item.data.shop.foodmony}}" data-num="{{ item.data.number1 }}">+</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 订单结算 -->
+    <view class="foot">
+        <view class="foot-top">
+          <view class="contens" bindtap="quanx">
+          <!-- 全选图片 -->
+            <view class="contens-img">
+              <image src="cloud://tianxuan-3gaixj5u932de649.7469-tianxuan-3gaixj5u932de649-1314595407/swiper-zhuye/weixuanzhon.png" alt="" class="img1" />
+              <image src="cloud://tianxuan-3gaixj5u932de649.7469-tianxuan-3gaixj5u932de649-1314595407/swiper-zhuye/xuanzhon.png" alt="" class="img1" wx:if="{{qxshow}}" />
+            </view>
+            <view class="contens-nam">全选</view>
+
+          </view>
+          <!-- 结算 -->
+          <view class="jiesuan">
+            <view class="jiesuan-mon">￥{{mony}}</view>
+            <view class="jiesuan-nams" bindtap="jiesuan">提交订单</view>
+          </view>
+        </view>
+    </view>
+</view>

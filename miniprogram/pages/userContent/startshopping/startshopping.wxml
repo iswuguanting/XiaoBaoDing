@@ -1,0 +1,76 @@
+<view>
+  <view class="conten"> 
+  <view class="conten-top">
+    <view class="then-one">
+      <!-- 图片 -->
+      <view class="then-img">
+        <image src="{{shop.img}}"></image>
+      </view>
+      <!-- 菜品时间，名称 -->
+      <view class="then-name">
+        <view>{{shop.foodname}}</view>
+        <view>周一至周五</view>
+        <view>随时退 · 过期自动退 · 到店</view>
+      </view>
+      <!-- 多少钱和购买数量 -->
+      <view class="then-mon">
+        <View class="themoney">￥{{shop.foodmony}}</View>
+        <View class="thenum">
+          <view bindtap="jiansu">-</view>
+          <view class="{{number1 == 1?'active':'acti'}}">{{number1}}</view>
+          <view bindtap="jiahao">+</view>
+        </View>
+      </view>
+    </view>
+
+    <!-- 优惠券 -->
+    <view class="yhq">
+      <image src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gAXR2VuZXJhdGVkIGJ5IFNuaXBhc3Rl/9sAhAAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47AQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAATABMDAREAAhEBAxEB/8QBogAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoLEAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+foBAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKCxEAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1O61K2tG2OxMh6Iqkk+lc8qijozqhRnPVbENvqMn2z7PeLHC7gNGoOfwJ6ZpRqPmtIuVFcvNDU0K2MDJvrO6F008KJIjOrkE4bgYwK5pQle6OqnUhy8stCJgdVvj5PyxhV8wsCGUg9B71NueWhelKGu5t11HELSEIFAJwAM0AFMZ//9k="></image>
+      <view>每人限用1张券</view>
+    </view>
+
+    <!-- 抵用券 -->
+    <view class="diyonq">
+        <view class="diyonq-le">
+          <image src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gAXR2VuZXJhdGVkIGJ5IFNuaXBhc3Rl/9sAhAAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47AQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAUABEDAREAAhEBAxEB/8QBogAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoLEAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+foBAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKCxEAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD1K+vbtdRjsrNY97RmRmkPGM4rnqVJqahA6qVOnyOdS+9tCJL7UbbULe3vVhZLgkAxk5BFKM6ikoztqXKlRlTcqd7rubNdJxHHeMzdQ3sE8CygGPbvTPXPTivGzGFTnjKJ72U+ylGUZ2+ZneHHv7vXoGlE7rHkkvnA/OscHGq6ycrnXmEaFPDtQtdnoNe+fLBgGgAwB2oAWgD/2Q=="></image>
+          <view>红包/抵用券</view>
+        </view>
+        <view class="diyonq-ri">暂无可用></view>
+    </view>
+     <!-- 积分 -->
+     <view class="diyonq">
+        <view class="diyonq-le">
+          <image src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gAXR2VuZXJhdGVkIGJ5IFNuaXBhc3Rl/9sAhAAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47AQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAATABMDAREAAhEBAxEB/8QBogAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoLEAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+foBAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKCxEAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2G4uEtojI/QVz4ivGhDnkVCDm7Iow6yjyhJEKBj8pPevPo5pGcrTVkzolhmldO5pAgjNeunc5Slqtu9xZsI/vLyBXn5lh5VqNo7o3w81Cd2Ykj3F6IbcQMrIeSa8CdSriFGlGNmjvUYU7yudLEhSJVPUDmvrKcXGCTPKbux5rQQmB6UrIB1MD/9k="></image>
+          <view>积分抵现</view>
+          <image src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD//gAXR2VuZXJhdGVkIGJ5IFNuaXBhc3Rl/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/8AACwgAEgARAQERAP/EANIAAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKCxAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/9oACAEBAAA/APXbq6MJ2IAXwWOeigdzUVvfM8gSUL8xwGXPB9CDV6qk6NFdfaRGZFZNjhRkgA5Bx36moIEMrIEidQH3u8ikZPoM1pUUlLX/2Q=="></image>
+        </view>
+        <view class="diyonq-ri">当前积分不足以抵扣></view>
+    </view>
+
+    <!-- 小记 -->
+    <view class="xiaoji">
+      <view>小计</view>
+      <view>￥{{everymoney}}</view>
+    </view>
+  </view>
+  <!-- 评论后享 -->
+  <view class="houxiang">
+      <view>评价后享</view>
+      <view><view>评价最高可得最高</view><view class="jifen">100积分</view></view>
+  </view>
+
+</view>
+<!-- 提交订单 -->
+<view class="tijaioss">
+  <view class="tijaioss-main">
+    <view class="main-le">
+      <view class="main-one">合计<view class="main-mony">￥<view class="mony">{{everymoney}}</view></view></view>
+      <view>共{{number1}}件 总优惠￥0</view>
+    </view>
+    <view class="tijaiodd" bindtap="tijaiodd">
+      提交订单
+    </view>
+  </view>
+</view>
+</view>
+

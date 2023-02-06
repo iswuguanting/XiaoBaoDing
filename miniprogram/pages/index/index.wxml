@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="container-box">
+        <view class="box-swiper">
+            <swiper circular indicator-dots="true" autoplay="true" interval="5000" duration="500">
+                <swiper-item class="swiper-one" wx:for="{{swiperData}}" wx:key="id">
+                    <image src="{{item.img}}"></image>
+                </swiper-item>
+            </swiper>
+        </view>
+        <view class="zaocan">
+            <view class="frood" wx:for="{{froods}}" wx:key="froolId" bindtap="gotueat" data-eat="{{item.title}}">
+                <image src="{{item.img}}" alt="" />
+                <view>{{item.timename}}</view>
+            </view>
+        </view>
+
+        <view class="frood-like">
+            <view class="like-one">猜你喜欢</view>
+            <view class="like-two">您喜欢的美食</view>
+        </view>
+
+        <!-- 喜欢的菜品 -->
+        <view class="guess-you-like">
+            <view class="the-like" wx:for="{{froodlkeData}}" wx:key="_id" data-it="{{item}}" bindtap="gotushu">
+                <view class="like-img">
+                    <image src="{{item.img}}">
+                    </image>
+                </view>
+                <view class="like-names">
+                   {{item.foodname}}
+                </view>
+            </view>
+
+        </view>
+
+    </view>
+</view>
